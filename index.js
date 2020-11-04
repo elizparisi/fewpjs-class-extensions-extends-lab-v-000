@@ -3,7 +3,7 @@
 class Polygon {
   constructor(sides){
     this.sides = sides;
-    this.count = this.sides.count;
+    this.count = this.sides.length;
   }
   
   get countSides(){
