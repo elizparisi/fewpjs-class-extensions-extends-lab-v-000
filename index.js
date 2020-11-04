@@ -20,12 +20,11 @@ class Polygon {
   }
 
 class Triangle extends Polygon {
-  if (this.count !=3) return;
-    let s1 = this.sides[0];
-    let s2 = this.sides[1];
-    let s3 = this.sides[2];
-
-    return ((s1 + s2 > s3) && (s2 + s3 > s1) && (s1 + s3 > s2));
+  get IsValid(){
+    let [side1, side2, side3] = this.sides;
+    
+    if (this.countSides === 3){
+    return ((side1 + side2 > side3) && (side1 + side3 > side2) && (side2 + side3 > side1));
     }
   }
 }
