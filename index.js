@@ -21,7 +21,7 @@ class Polygon {
   }
 
 class Triangle extends Polygon {
-  get IsValid(){
+  get isValid(){
     if (this.count !=3) return;
     let s1 = this.sides[0];
     let s2 = this.sides[1];
